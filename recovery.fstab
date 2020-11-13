@@ -1,0 +1,12 @@
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+# mount point       fstype    device                                                                flags
+/system             ext4      /dev/block/rknand_system                                              flags=backup=1
+/system_image       emmc      /dev/block/rknand_system                                              flags=display="System image";backup=1;flashimg=1
+/cache              ext4      /dev/block/rknand_cache                                               
+/data               ext4      /dev/block/rknand_userdata                                            
+/cust               ext4      /dev/block/rknand_cust                                                flags=display="Cust"
+/boot               mtd       boot                                                                  
+/recovery           mtd       recovery                                                              flags=backup=1
