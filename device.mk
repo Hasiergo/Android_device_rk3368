@@ -18,3 +18,4 @@
 
 LOCAL_PATH := device/hannspree/rk3368_32
 
+BOARD_TWRP_ENABLE := true

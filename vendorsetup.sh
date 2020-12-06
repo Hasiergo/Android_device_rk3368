@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_-userdebug
-add_lunch_combo omni_-eng
+#add_lunch_combo omni_rk3368_32-userdebug
+add_lunch_combo omni_rk3368_32-eng

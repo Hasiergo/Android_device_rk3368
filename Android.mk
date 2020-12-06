@@ -16,8 +16,10 @@
 # limitations under the License.
 #
 
+ifneq ($(filter rk3368_32,$(TARGET_DEVICE)),)
+
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE), )
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
+include $(call all-makefiles-under,$(LOCAL_PATH))
+
 endif
